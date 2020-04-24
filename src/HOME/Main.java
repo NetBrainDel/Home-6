@@ -5,7 +5,6 @@ import java.util.Scanner;
 
     public class Main {
         public static void main(String[] args) {
-             //СЧЕТ ПОПЫТОК
             int w = 3; //СЧЕТ ПОПЫТОК
             int a = 0; //ЧИСЛО ВВОДА
             Scanner in = new Scanner(System.in);
