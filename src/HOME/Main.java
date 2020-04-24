@@ -20,14 +20,14 @@ public class Main {
                     w--;
 
                 if (a > 10 || a < 1) {
-                    System.out.println("оно не соответствует условию выше(от 1 до 10)...");
+                    System.out.println("оно не соответствует условию выше(ЧИСЛО от 1 до 10)...");
 
                     if (q == 3) {
                         System.out.println("попытки закончились");
                         System.out.println("учись читать..\n   ПОКА");
                         System.exit(3);
                     }
-                    System.out.println("повторите, у вас осталось: " + w + " попытки");
+                    System.out.println("повторите, у вас осталось попыток: " + w);
 
                 } else {
                     System.out.println("я рад что это число: " + "|" + a + "|" + " не нужно мне повторяться, спасибо)");
@@ -36,7 +36,7 @@ public class Main {
                 }
                 }catch (InputMismatchException e){
                     w--;
-                    System.err.println("ввод текста не допустим "+"|"+w+"|"+" попытки осталось" );
+                    System.err.println("ввод текста не допустим, попыток осталось: "+"|"+w+"|" );
 
 
                     in.next();
