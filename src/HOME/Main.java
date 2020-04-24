@@ -10,7 +10,7 @@ import java.util.Scanner;
             int a = 0;
             Scanner in = new Scanner(System.in);
             System.out.println("Введите число от 1 до 10");
-            System.out.println("у вас " + w + " попытки");
+            System.out.println("у вас " +"|"+ w +"|"+ " попытки");
 
             for (int i = 0; i < 3; i++) {
 
@@ -19,12 +19,12 @@ import java.util.Scanner;
                     a = in.nextInt();
                     q++;
                     w--;
-                    System.out.println("ваше число: " + a);
+                    System.out.println("ваше число: " +"|"+ a +"|");
                 }catch (InputMismatchException e){      //InputMismatchException\\---ОШИБКА ВВОДА ТЕКСТА.
                     q++;
                     w--;
                     //System.err.println(); //выделить красным\\
-                    System.out.println("ввод текста не допустим, попыток осталось: "+"|"+w+"|" );
+                    System.out.println("ввод текста не допустим" );
                     in.next();
                 }
 //___________________________________________________________________________________________________________________\\
@@ -37,10 +37,10 @@ import java.util.Scanner;
                         System.out.println("учись читать..\n   ПОКА");
                         System.exit(3);
                     }
-                    System.out.println("повторите, у вас осталось попыток: " + w);
+                    System.out.println("повторите, у вас осталось попыток: " +"|"+ w+"|");
 
                 } else {
-                    System.out.println("я рад что это число: " + "|" + a + "|" + " не нужно мне повторяться, спасибо)");
+                    System.out.println("я рад, что это число: " + "|" + a + "|" + " не нужно мне повторяться, спасибо)");
                     System.out.println("ПОКА!");
                     System.exit(0);
                 }
