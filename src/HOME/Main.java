@@ -36,7 +36,7 @@ public class Main {
                 }
                 }catch (InputMismatchException e){
                     w--;
-                    System.err.println("ввод текста не допустим, попыток осталось: "+"|"+w+"|" );
+                    System.out.println("ввод текста не допустим, попыток осталось: "+"|"+w+"|" );
 
 
                     in.next();
