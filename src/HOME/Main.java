@@ -5,9 +5,9 @@ import java.util.Scanner;
 
     public class Main {
         public static void main(String[] args) {
-            int q = 0;
-            int w = 3;
-            int a = 0;
+             //СЧЕТ ПОПЫТОК
+            int w = 3; //СЧЕТ ПОПЫТОК
+            int a = 0; //ЧИСЛО ВВОДА
             Scanner in = new Scanner(System.in);
             System.out.println("Введите число от 1 до 10");
             System.out.println("у вас " +"|"+ w +"|"+ " попытки");
@@ -17,11 +17,9 @@ import java.util.Scanner;
 //__________________________________________ПРОВЕРКА ОШИБКИ(ТЕКСТ)___________________________________________________\\
                 try {
                     a = in.nextInt();
-                    q++;
                     w--;
                     System.out.println("ваше число: " +"|"+ a +"|");
                 }catch (InputMismatchException e){      //InputMismatchException\\---ОШИБКА ВВОДА ТЕКСТА.
-                    q++;
                     w--;
                     //System.err.println(); //выделить красным\\
                     System.out.println("ввод текста не допустим" );
@@ -32,7 +30,7 @@ import java.util.Scanner;
                 if (a > 10 || a < 1) {
                     System.out.println("оно не соответствует условию выше(ЧИСЛО от 1 до 10)...");
 
-                    if (q == 3) {
+                    if (w == 0) {
                         System.out.println("попытки закончились");
                         System.out.println("учись читать..\n   ПОКА");
                         System.exit(3);
